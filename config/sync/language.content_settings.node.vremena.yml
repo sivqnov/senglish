@@ -1,0 +1,11 @@
+uuid: 109dc870-65da-4262-a36f-d7b359eef377
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.vremena
+id: node.vremena
+target_entity_type_id: node
+target_bundle: vremena
+default_langcode: site_default
+language_alterable: false

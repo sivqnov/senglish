@@ -1,0 +1,8 @@
+uuid: 06337cb9-0855-41a8-a4ec-0e81a2deab0f
+langcode: ru
+status: true
+dependencies: {  }
+name: Время
+vid: tense
+description: 'Времена английского'
+weight: 0

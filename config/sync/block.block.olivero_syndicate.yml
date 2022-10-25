@@ -1,0 +1,23 @@
+uuid: 347c5648-e9fe-43ff-9add-f12471fc40c6
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - olivero
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: olivero_syndicate
+theme: olivero
+region: social
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: RSS-лента
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

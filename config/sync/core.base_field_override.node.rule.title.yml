@@ -1,0 +1,18 @@
+uuid: b104d865-8f8e-47bf-b2a7-d16a8ab08922
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.rule
+id: node.rule.title
+field_name: title
+entity_type: node
+bundle: rule
+label: Правило
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

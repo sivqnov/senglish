@@ -1,0 +1,48 @@
+uuid: a9d0803d-eaf0-4d04-8cd0-9d3844b56157
+langcode: ru
+status: true
+dependencies:
+  module:
+    - language
+_core:
+  default_config_hash: gjYvYwMqulNsq7VmScWKOqEUxar9AX0TvG8vfCCguUQ
+id: language-edit
+label: 'Редактирование языков'
+module: language
+routes:
+  -
+    route_name: entity.configurable_language.edit_form
+tips:
+  language-edit-overview:
+    id: language-edit-overview
+    plugin: text
+    label: 'Редактирование языков'
+    weight: 1
+    body: '<p>Эта страница предоставляет возможность редактировать язык на вашем сайте, включая собственные языки.</p>'
+  language-edit-langcode:
+    id: language-edit-langcode
+    plugin: text
+    label: 'Код языка'
+    weight: 2
+    selector: '#edit-langcode-view'
+    body: '<p>Невозможно изменить код языка сайта, так как он используется системой для отслеживания языка.</p>'
+  language-edit-label:
+    id: language-edit-label
+    plugin: text
+    label: 'Название языка'
+    weight: 3
+    selector: '#edit-label'
+    body: 'Название языка используется по всему сайту для всех пользователей и пишется на английском языке. Названия встроенных языков могут быть переведены с помощью модуля Interface Translation, а названия встроенных и собственных языков могут быть переведены с помощью модуля Configuration Translation.'
+  language-edit-direction:
+    id: language-edit-direction
+    plugin: text
+    label: 'Направление языка'
+    weight: 4
+    selector: '#edit-direction--wrapper--description'
+    body: '<p>Выберите направление языка - "Слева-направо" или "Справа-налево".</p><p>Обратите внимание, что не все темы поддерживают направление "Справа-налево", поэтому проверьте свою тему перед использованием направления "Справа-налево".</p>'
+  language-edit-continue:
+    id: language-edit-continue
+    plugin: text
+    label: Продолжение
+    weight: 5
+    body: '<p>Теперь, когда у вас есть обзор функции «Изменить язык», вы можете продолжить: <ul><li>Редактирование языка</li><li><a href="[site:url]admin/config/region/language">Просмотр настроенных языков</a></li></ul></p>'

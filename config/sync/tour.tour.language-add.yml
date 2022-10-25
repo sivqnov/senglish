@@ -1,0 +1,34 @@
+uuid: 5a5d01ef-cf54-4d9f-b21e-aff7a400d98e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - language
+_core:
+  default_config_hash: vcDd9H0uIlyOQGoVAJuD3ADMnQeRR_X3B-ojyb8Cbnc
+id: language-add
+label: 'Добавление языков'
+module: language
+routes:
+  -
+    route_name: language.add
+tips:
+  language-add-overview:
+    id: language-add-overview
+    plugin: text
+    label: 'Добавление языков'
+    weight: 1
+    body: '<p>Эта страница предоставляет возможность добавить на сайт общеизвестные языки.</p><p>Если необходимый язык отсутствует, можно добавить собственный язык.</p>'
+  language-add-choose:
+    id: language-add-choose
+    plugin: text
+    label: 'Выберите язык'
+    weight: 2
+    selector: '#edit-predefined-langcode'
+    body: '<p>Выберите язык из списка, или выберите пункт "Собственный язык...", который находится в конце списка.</p><p>После выбора языка, нажмите кнопку "Добавить язык" .</p><p>При добавлении собственного языка, появится дополнительная форма, где будет необходимо ввести название, код и направление языка.</p>'
+  language-add-continue:
+    id: language-add-continue
+    plugin: text
+    label: Продолжение
+    weight: 3
+    body: '<p>Теперь, когда у вас есть обзор функции «Добавить языки», вы можете продолжить: <ul><li>Добавление языка</li><li>Добавление пользовательского языка</li><li><a href="[site:url]admin/config/regional/language">Просмотр настроенных языков</a></li></ul></p>'

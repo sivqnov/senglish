@@ -1,0 +1,11 @@
+uuid: 76438c7d-1f5a-4193-8d6d-d012c9d2f13d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+id: taxonomy_term.tags
+target_entity_type_id: taxonomy_term
+target_bundle: tags
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,69 @@
+uuid: ad9db3b9-391b-47f0-ae57-7be7e298b8dc
+langcode: ru
+status: true
+dependencies:
+  module:
+    - locale
+_core:
+  default_config_hash: Kcx1PIw-KgGbTo5_tOkbI6TWJiP_0Sr7t5T9SuMV2hA
+id: locale
+label: Перевод
+module: locale
+routes:
+  -
+    route_name: locale.translate_page
+tips:
+  locale-overview:
+    id: locale-overview
+    plugin: text
+    label: 'Перевод пользовательского интерфейса'
+    weight: 1
+    body: 'На данной странице вы можете перевести пользовательский интерфейс или изменить существующий перевод. Если вы изначально установили сайт на Английском, перед началом использования этой страницы, вам необходимо добавить другой язык на странице <a href="[site:url]admin/config/regional/language">Языки</a>.'
+  locale-language:
+    id: locale-language
+    plugin: text
+    label: 'Язык перевода'
+    weight: 2
+    selector: '#edit-langcode'
+    body: 'Выберите язык, который вы хотите перевести.'
+  locale-search:
+    id: locale-search
+    plugin: text
+    label: Поиск
+    weight: 3
+    selector: '#edit-string'
+    body: 'Введите опредёленное слово или предложение, которое необходимо перевести. Можно ввести только часть слова.'
+  locale-filter:
+    id: locale-filter
+    plugin: text
+    label: 'Фильтрация результатов поиска'
+    weight: 4
+    selector: '#edit-translation'
+    body: 'Вы можете искать непереведённые строки, если вы хотите перевести что-нибудь ещё непереведённое. Если вы хотите изменить существующий перевод, вы можете искать только переведённые строки.'
+  locale-submit:
+    id: locale-submit
+    plugin: text
+    label: 'Применить критерий поиска'
+    weight: 5
+    selector: '#edit-submit'
+    body: 'Для применения выбранного критерия поиска, нажмите кнопку <em>Фильтр</em>.'
+  locale-translate:
+    id: locale-translate
+    plugin: text
+    label: Переводы
+    weight: 6
+    selector: .js-form-type-textarea
+    body: 'Вы можете написать свой собственный вариант перевода в текстовых полях правой колонки. Попробуйте выяснить, в каком контексте будет использоваться текст для того, чтобы перевести его как можно точнее.'
+  locale-validate:
+    id: locale-validate
+    plugin: text
+    label: 'Подтверждение перевода'
+    weight: 7
+    selector: '#edit-submit--2'
+    body: 'После завершения ваших переводов нажмите кнопку <em>Сохранить переводы</em>. Необходимо сохранять переводы каждый раз перед изменением страницы или выполнением нового поиска.'
+  locale-continue:
+    id: locale-continue
+    plugin: text
+    label: Продолжение
+    weight: 8
+    body: 'Выполненные здесь переводы будут использоваться в пользовательском интерфейсе сайта. Если их необходимо использовать на другом сайте или отредактировать во внешнем редакторе переводов, <a href="[site:url]admin/config/regional/translate/export">экспортируйте их</a> в po-файл, а затем <a href="[site:url]admin/config/regional/translate/import">импортируйте их</a>.'

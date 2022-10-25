@@ -1,0 +1,29 @@
+uuid: 3a6bee89-578e-4f37-9753-5f86a842c79b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tense
+    - node.type.vremena
+    - taxonomy.vocabulary.tense
+id: node.vremena.field_tense
+field_name: field_tense
+entity_type: node
+bundle: vremena
+label: Время
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tense: tense
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

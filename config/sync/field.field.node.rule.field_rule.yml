@@ -1,0 +1,29 @@
+uuid: a3a09bc9-830c-4ec9-ae08-fb30e1c6b68e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rule
+    - node.type.rule
+    - taxonomy.vocabulary.rules
+id: node.rule.field_rule
+field_name: field_rule
+entity_type: node
+bundle: rule
+label: Правила
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      rules: rules
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: tense
+field_type: entity_reference

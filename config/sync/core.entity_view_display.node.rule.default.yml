@@ -1,0 +1,38 @@
+uuid: 803c9b20-2264-4fab-aa46-61ddcdfe056e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.rule.body
+    - field.field.node.rule.field_rule
+    - node.type.rule
+  module:
+    - text
+    - user
+id: node.rule.default
+targetEntityType: node
+bundle: rule
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_rule:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

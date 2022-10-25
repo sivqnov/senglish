@@ -1,0 +1,8 @@
+uuid: ae3a2a3d-965c-4f28-a525-6645fa1bced9
+langcode: ru
+status: true
+dependencies: {  }
+name: Правила
+vid: rules
+description: 'Правила английского языка'
+weight: 0

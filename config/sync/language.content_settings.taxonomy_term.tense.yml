@@ -1,0 +1,11 @@
+uuid: 921a8e10-9118-41e4-84b3-0ec8ffe7d850
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tense
+id: taxonomy_term.tense
+target_entity_type_id: taxonomy_term
+target_bundle: tense
+default_langcode: site_default
+language_alterable: false

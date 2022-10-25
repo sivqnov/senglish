@@ -1,0 +1,33 @@
+uuid: 1959ea15-a5a3-4b4a-9645-96382fe16f53
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.vremena.body
+    - field.field.node.vremena.field_tense
+    - node.type.vremena
+  module:
+    - text
+    - user
+id: node.vremena.teaser
+targetEntityType: node
+bundle: vremena
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_tense: true
+  langcode: true

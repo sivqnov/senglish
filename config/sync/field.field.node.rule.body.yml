@@ -1,0 +1,23 @@
+uuid: 601e7229-04f0-42ab-8775-7038831ba513
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.rule
+  module:
+    - text
+id: node.rule.body
+field_name: body
+entity_type: node
+bundle: rule
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

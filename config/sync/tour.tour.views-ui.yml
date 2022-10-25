@@ -1,0 +1,88 @@
+uuid: 196c61a0-de20-44f8-8e8e-edd726be561a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - views_ui
+_core:
+  default_config_hash: XIYL1KF7ND2XQRa5AxvEcp8vgCN2kUGiuBNhCgxrPME
+id: views-ui
+label: 'Страница редактирования представления'
+module: views_ui
+routes:
+  -
+    route_name: entity.view.edit_form
+  -
+    route_name: entity.view.edit_display_form
+tips:
+  views-main:
+    id: views-main
+    plugin: text
+    label: 'Управление настройками представления'
+    weight: 1
+    body: 'Просмотр или редактирование конфигурации.'
+  views-ui-displays:
+    id: views-ui-displays
+    plugin: text
+    label: 'Отображения в этом представлении'
+    weight: 2
+    selector: '#views-display-top'
+    body: 'Отображение - это способ вывода результатов, например, в виде страницы или блока. Представление может содержать несколько отображений, которые перечислены здесь. Активное отображение подсвечено.'
+  views-ui-view-admin:
+    id: views-ui-view-admin
+    plugin: text
+    label: 'Администрирование представления'
+    weight: 3
+    position: right
+    selector: '#views-display-extra-actions'
+    body: 'Выполнение административных задач, включающие добавление описания и создание копии. Нажмите раскрывающуюся кнопку для просмотра доступных действий.'
+  views-ui-format:
+    id: views-ui-format
+    plugin: text
+    label: 'Формат вывода'
+    weight: 4
+    selector: .views-ui-display-tab-bucket.format
+    body: 'Выберите способ вывода результатов. Например, выберите <em>Содержимое</em>, для вывода каждого элемента полностью, используя настроенные параметры отображения. Или выберите <em>Поля</em>, с помощью которых можно выводить только определённые поля для каждого результата. Дополнительные форматы могут быть добавлены с помощью установки модулей для <em>расширения</em> функциональности Drupal.'
+  views-ui-fields:
+    id: views-ui-fields
+    plugin: text
+    label: Поля
+    weight: 5
+    selector: .views-ui-display-tab-bucket.field
+    body: 'Если это представление использует поля, они будут перечислены здесь. Нажмите на поле для того, чтобы настроить его.'
+  views-ui-filter:
+    id: views-ui-filter
+    plugin: text
+    label: 'Фильтрация представления'
+    weight: 6
+    selector: .views-ui-display-tab-bucket.filter
+    body: 'Добавьте фильтры для ограничения вывода результатов. Например, для отображения только <em>опубликованных</em> материалов, необходимо добавить фильтр <em>Опубликовано</em> и выбрать <em>Да</em>'
+  views-ui-filter-operations:
+    id: views-ui-filter-operations
+    plugin: text
+    label: 'Действия с фильтрами'
+    weight: 7
+    selector: '.views-ui-display-tab-bucket.filter .dropbutton-widget'
+    body: 'Добавить, упорядочить или удалить фильтры.'
+  views-ui-sorts:
+    id: views-ui-sorts
+    plugin: text
+    label: 'Критерий сортировки'
+    weight: 8
+    selector: .views-ui-display-tab-bucket.sort
+    body: 'Управляйте порядком вывода результатов. Нажмите на активное правило сортировки для его настройки.'
+  views-ui-sorts-operations:
+    id: views-ui-sorts-operations
+    plugin: text
+    label: 'Действия сортировки'
+    weight: 9
+    selector: '.views-ui-display-tab-bucket.sort .dropbutton-widget'
+    body: 'Добавление, упорядочивание и удаление правил сортировки.'
+  views-ui-preview:
+    id: views-ui-preview
+    plugin: text
+    label: Предпросмотр
+    weight: 10
+    position: right
+    selector: '#preview-submit'
+    body: 'Показать предварительный просмотр вывода представления.'
